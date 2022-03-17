@@ -4,10 +4,14 @@ package com.transdev.busticket.services;
 import com.transdev.busticket.exceptions.TransDevException;
 import com.transdev.busticket.models.PaymentMeans;
 import com.transdev.busticket.models.entities.Reservation;
+import com.transdev.busticket.repositories.ReservationRepository;
 import com.transdev.busticket.services.interfaces.IReservationService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class ReservationService implements IReservationService {
 
     @Override
@@ -16,7 +20,7 @@ public class ReservationService implements IReservationService {
     }
 
     @Override
-    public Reservation getReservationById(long idReservation) throws TransDevException {
+    public Reservation getReservationById(long reservationId) throws TransDevException {
         return null;
     }
 
@@ -26,12 +30,12 @@ public class ReservationService implements IReservationService {
     }
 
     @Override
-    public void deleteReservation(long idReservation) throws TransDevException {
+    public void deleteReservation(long reservationId) throws TransDevException {
 
     }
 
     @Override
-    public boolean payReservation(long idReservation, PaymentMeans moyenPaiment) throws TransDevException {
+    public boolean payReservation(long reservationId, PaymentMeans moyenPaiment) throws TransDevException {
         return false;
     }
 }

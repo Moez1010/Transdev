@@ -3,9 +3,10 @@ package com.transdev.busticket.services;
 import com.transdev.busticket.exceptions.TransDevException;
 import com.transdev.busticket.models.entities.Bus;
 import com.transdev.busticket.services.interfaces.IBusService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class BusService implements IBusService {
 
 

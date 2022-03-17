@@ -1,7 +1,7 @@
 package com.transdev.busticket.models.entities;
 
 import javax.persistence.*;
-
+@Entity
 public class Client {
 
 

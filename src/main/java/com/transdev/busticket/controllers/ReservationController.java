@@ -25,7 +25,7 @@ public class ReservationController {
         return  null;
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/{id}/pay")
     public Reservation payReservationById(@PathVariable("id") Long id) {
         return  null;
     }

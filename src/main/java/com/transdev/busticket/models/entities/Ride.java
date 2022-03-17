@@ -20,6 +20,14 @@ public class Ride {
     public Ride() {
     }
 
+    public Ride(String date, String startHour, int capacity, float price, Bus bus) {
+        this.date = date;
+        this.startHour = startHour;
+        this.capacity = capacity;
+        this.price = price;
+        this.bus = bus;
+    }
+
     public Long getId() {
         return id;
     }
