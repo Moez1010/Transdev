@@ -1,6 +1,7 @@
 package com.transdev.busticket.services;
 
 import com.transdev.busticket.exceptions.TransDevException;
+import com.transdev.busticket.models.Paypal;
 import com.transdev.busticket.models.entities.Bus;
 import com.transdev.busticket.models.entities.Reservation;
 import com.transdev.busticket.models.entities.Ride;
@@ -72,7 +73,8 @@ class ReservationServiceTest {
     }
 
     @Test
-    void payReservation() {
-
+    void payReservation() throws TransDevException {
+       boolean paupalstatus = reservationService.payReservation(reservationId,new Paypal());
+        assertFalse(paupalstatus);
     }
 }

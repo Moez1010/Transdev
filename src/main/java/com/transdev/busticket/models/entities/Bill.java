@@ -14,6 +14,11 @@ public class Bill {
     public Bill() {
     }
 
+    public Bill(String paymentMean, Reservation reservation) {
+        this.paymentMean = paymentMean;
+        this.reservation = reservation;
+    }
+
     public Long getId() {
         return id;
     }

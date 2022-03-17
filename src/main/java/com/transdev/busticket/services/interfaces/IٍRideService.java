@@ -9,5 +9,5 @@ public interface IٍRideService {
 
     Ride createRide(Ride ride) throws TransDevException;
     List<Ride> getAll() throws TransDevException;
-    Ride getById() throws TransDevException;
+    Ride getById(Long id) throws TransDevException;
 }
